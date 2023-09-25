@@ -10,7 +10,7 @@ import torch.nn.functional as F
 
 from torch.autograd import Variable
 import scipy.misc
-import tensorflow as tf
+
 import errno
 import imageio
 import torchvision.transforms.functional as transform
