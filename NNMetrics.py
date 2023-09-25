@@ -3,7 +3,7 @@ import torch.nn as nn
 import numpy as np
 import scipy.spatial
 import os, sys
-import tensorflow as tf
+
 from PIL import Image
 import math
 from torch.autograd import Variable
