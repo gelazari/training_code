@@ -6,7 +6,7 @@ import glob
 import tifffile as tiff
 import torch.nn.functional as F
 import scipy.misc
-import tensorflow as tf
+
 from PIL import Image
 import math
 from torch.autograd import Variable
