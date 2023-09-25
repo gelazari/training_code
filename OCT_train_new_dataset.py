@@ -251,9 +251,9 @@ def trainSingleModel(model_name,
 
                 else:
 
-                    print(outputs_logits.shape)
+                    print("output logits shape:", outputs_logits.shape)
 
-                    print(labels.shape)
+                    print("labels shape:", labels.shape)
 
                     main_loss = nn.CrossEntropyLoss(reduction='mean', ignore_index=12)(torch.softmax(outputs_logits, dim=1), labels.squeeze(1))
                 print('Epoch == ', epoch)
@@ -285,7 +285,7 @@ def trainSingleModel(model_name,
 
                         labels = labels.squeeze(1)
 
-                    print(' Calculate training and validation metrics ')
+                    print('----Calculate training and validation metrics ')
                     print(outputs.shape)
 
                     print(labels.shape)
