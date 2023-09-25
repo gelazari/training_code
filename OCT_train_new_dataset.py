@@ -258,6 +258,7 @@ def trainSingleModel(model_name,
                     main_loss = nn.CrossEntropyLoss(reduction='mean', ignore_index=12)(torch.softmax(outputs_logits, dim=1), labels.squeeze(1))
                 print('Epoch == ', epoch)
                 print('j = ', j)
+                print(imagename)
                 print('main loss: ', main_loss)
                 running_loss += main_loss
                 print('running loss: ', running_loss)
