@@ -3,12 +3,11 @@ from OCT_train_new_dataset import trainModels
 # ===================================================================================
 
 if __name__ == '__main__':
-    # C:\Users\sbng352\Desktop\OCT_CNNtraining
     trainModels(model='SOASNet',
                 input_dim=1,
                 epochs=50,
-                data_directory=r'C:/Users/sbng352/Desktop',
-                data_set='MAVI_Healthy_Glaucoma',
+                data_directory='/home/ubuntu',
+                data_set='dataset',
                 # data_directory='C:\\Users\\sbng352\\Desktop',
                 # data_set='OCT_CNNtraining',
                 width=16,
