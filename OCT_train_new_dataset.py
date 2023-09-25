@@ -201,7 +201,7 @@ def trainSingleModel(model_name,
 
     print(model_name)
 
-    writer = SummaryWriter('../../Log_' + log + '//' + model_name)
+    writer = SummaryWriter('/home/ubuntu/training_code/Log_' + log + '//' + model_name)
     #writer = SummaryWriter('Log_' + log + '//test')
 
     optimizer = AdamW(model.parameters(), lr=lr, betas=(0.9, 0.999), eps=1e-8, weight_decay=1e-5)
